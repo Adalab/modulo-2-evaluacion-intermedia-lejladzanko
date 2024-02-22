@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+.title{
+    color: lightslategray;
+    margin-bottom: 10px;
+}
+
+.container{
+    margin: 20px;
+    padding: 20px;
+ 
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text{
+    margin-bottom: 5px;
+}
+
+.button{
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 60px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    transition: background-color 0.3 ease; 
+
+    &:hover {
+        background-color: lightblue;
+    }
+
+    &:disabled {
+        background-color: lightgray;
+        color: aliceblue;
+        cursor: not-allowed;
+
+    }
+}
+
+
+.numberInput{
+    background-color: lightgray;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    margin-bottom: 5px;
+
+}
+
+
+.hint, .attempts{
+    border: 3px solid lightgray;
+    margin-bottom: 5px;
+    padding: 5px;
+    color: lightslategrey;
+}
+
